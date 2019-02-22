@@ -12,9 +12,12 @@
 		B64B91EF22205B2500E839CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64B91ED22205B2500E839CE /* Main.storyboard */; };
 		B64B91F122205B2600E839CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64B91F022205B2600E839CE /* Assets.xcassets */; };
 		B64B91F422205B2600E839CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64B91F222205B2600E839CE /* LaunchScreen.storyboard */; };
+		E26EFDADC91302771A179EFA /* Pods_MimosaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED17784C4E4A1B258842ABC4 /* Pods_MimosaApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AB05FBBAF31963DE7BF5174 /* Pods-MimosaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimosaApp.debug.xcconfig"; path = "Target Support Files/Pods-MimosaApp/Pods-MimosaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		59346BEDAC4306C27D345203 /* Pods-MimosaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimosaApp.release.xcconfig"; path = "Target Support Files/Pods-MimosaApp/Pods-MimosaApp.release.xcconfig"; sourceTree = "<group>"; };
 		B64B91E622205B2500E839CE /* MimosaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimosaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64B91E922205B2500E839CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64B91EB22205B2500E839CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B64B91F022205B2600E839CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B64B91F322205B2600E839CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B64B91F522205B2600E839CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED17784C4E4A1B258842ABC4 /* Pods_MimosaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimosaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26EFDADC91302771A179EFA /* Pods_MimosaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D412F1D73881BF3D5A27DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB05FBBAF31963DE7BF5174 /* Pods-MimosaApp.debug.xcconfig */,
+				59346BEDAC4306C27D345203 /* Pods-MimosaApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		697A3826903A96FE983D4278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED17784C4E4A1B258842ABC4 /* Pods_MimosaApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B64B91DD22205B2500E839CE = {
 			isa = PBXGroup;
 			children = (
 				B64B91E822205B2500E839CE /* MimosaApp */,
 				B64B91E722205B2500E839CE /* Products */,
+				01D412F1D73881BF3D5A27DE /* Pods */,
+				697A3826903A96FE983D4278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B64B91F822205B2600E839CE /* Build configuration list for PBXNativeTarget "MimosaApp" */;
 			buildPhases = (
+				6A0995ACC31A526AD802E6ED /* [CP] Check Pods Manifest.lock */,
 				B64B91E222205B2500E839CE /* Sources */,
 				B64B91E322205B2500E839CE /* Frameworks */,
 				B64B91E422205B2500E839CE /* Resources */,
+				C5B8221EC4E313E3433BE536 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A0995ACC31A526AD802E6ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MimosaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B8221EC4E313E3433BE536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MimosaApp/Pods-MimosaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Turbolinks/Turbolinks.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turbolinks.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MimosaApp/Pods-MimosaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B64B91E222205B2500E839CE /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		B64B91F922205B2600E839CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB05FBBAF31963DE7BF5174 /* Pods-MimosaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +372,7 @@
 		};
 		B64B91FA22205B2600E839CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59346BEDAC4306C27D345203 /* Pods-MimosaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
